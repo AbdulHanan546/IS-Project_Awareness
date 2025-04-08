@@ -36,6 +36,16 @@ const HomePage = () => {
           <p>Solve puzzles to learn about cyber security</p>
           <Link to="/security-puzzles" className="cta-button">Start Puzzles</Link>
         </motion.div>
+
+        <motion.div
+          whileHover={{ scale: 1.05 }}
+          whileTap={{ scale: 0.95 }}
+          className="feature-card"
+        >
+          <h2>More Quizzes</h2>
+          <p>Test your knowledge on various security topics</p>
+          <Link to="/additional-quizzes" className="cta-button">Start Learning</Link>
+        </motion.div>
       </div>
 
       <motion.div
@@ -45,7 +55,7 @@ const HomePage = () => {
         className="stats-section"
       >
         <div className="stat-item">
-          <h3>Learning</h3>
+          <h3>100+</h3>
           <p>Scenarios</p>
         </div>
         <div className="stat-item">
