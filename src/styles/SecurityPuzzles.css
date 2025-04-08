@@ -1,0 +1,147 @@
+.puzzles-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 2rem;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  border-radius: 15px;
+  color: white;
+}
+
+.puzzles-container h2 {
+  text-align: center;
+  color: #00b4d8;
+  margin-bottom: 2rem;
+}
+
+.score {
+  text-align: center;
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+  color: #90e0ef;
+}
+
+.puzzle-card {
+  background: rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  padding: 2rem;
+  margin-bottom: 2rem;
+}
+
+.password-puzzle,
+.network-puzzle,
+.social-puzzle {
+  background: rgba(255, 255, 255, 0.05);
+  padding: 1.5rem;
+  border-radius: 8px;
+}
+
+.password-puzzle h3,
+.network-puzzle h3,
+.social-puzzle h3 {
+  color: #00b4d8;
+  margin-bottom: 1rem;
+}
+
+.password-options {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin: 2rem 0;
+  min-height: 300px;
+}
+
+.password-option {
+  background: rgba(0, 0, 0, 0.2);
+  padding: 1rem;
+  border-radius: 8px;
+  cursor: grab;
+  transition: background-color 0.3s ease;
+  user-select: none;
+  border: 2px solid transparent;
+}
+
+.password-option:hover {
+  background: rgba(0, 0, 0, 0.3);
+  border-color: #00b4d8;
+}
+
+.password-option:active {
+  cursor: grabbing;
+}
+
+/* Add visual feedback for dragging */
+.password-option[data-dragging="true"] {
+  background: rgba(0, 180, 216, 0.2);
+  border-color: #00b4d8;
+  box-shadow: 0 0 10px rgba(0, 180, 216, 0.5);
+}
+
+.network-options,
+.red-flags {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.network-option,
+.red-flag {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.5rem;
+  background: rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+}
+
+.network-option input,
+.red-flag input {
+  width: 1.2rem;
+  height: 1.2rem;
+}
+
+.social-puzzle .scenario {
+  background: rgba(0, 0, 0, 0.2);
+  padding: 1rem;
+  border-radius: 8px;
+  margin: 1rem 0;
+  font-style: italic;
+}
+
+button {
+  margin-top: 1rem;
+  padding: 0.8rem 1.5rem;
+  background: linear-gradient(45deg, #00b4d8, #90e0ef);
+  border: none;
+  border-radius: 25px;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+button:hover {
+  transform: translateY(-2px);
+}
+
+.explanation {
+  margin-top: 2rem;
+  padding: 1.5rem;
+  background: rgba(0, 0, 0, 0.2);
+  border-radius: 8px;
+}
+
+.explanation h4 {
+  color: #00b4d8;
+  margin-bottom: 1rem;
+}
+
+@media (max-width: 768px) {
+  .puzzles-container {
+    padding: 1rem;
+  }
+  
+  .puzzle-card {
+    padding: 1rem;
+  }
+} 
