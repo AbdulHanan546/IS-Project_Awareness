@@ -4,6 +4,7 @@ import { Link } from 'react-router-dom';
 import '../styles/HomePage.css';
 
 const HomePage = () => {
+  waleed
   return (
     <div className="home-container">
       <motion.div
